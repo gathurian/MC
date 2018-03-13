@@ -16,9 +16,3 @@ float FahrenheitToCelsius ()
     }
 
 }
-
-int main ()
-{
-  FahrenheitToCelsius ();
-  return 0;
-}

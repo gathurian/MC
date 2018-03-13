@@ -20,12 +20,13 @@ void DecimalToBinary(int decimal){
     printf("\n");
 }
 
-int main(){
+/*
+ * int main(){
     for(;;){
         int wert;
         printf("Wert als Integer (auch negativ): ");
         scanf("%d", &wert);
         DecimalToBinary(wert);
     }
-}
+}*/
 

@@ -3,4 +3,12 @@ project(MC_Exercises C)
 
 set(CMAKE_C_STANDARD 99)
 
-add_executable(MC_Exercises Reverse.c)
+include_directories("${PROJECT_SOURCE_DIR}/SW01/")
+add_subdirectory(SW01)
+
+include_directories("${PROJECT_SOURCE_DIR}/SW02/")
+add_subdirectory(SW02)
+
+include_directories("${PROJECT_SOURCE_DIR}/SW03/")
+add_subdirectory(SW03)
+

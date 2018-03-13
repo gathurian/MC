@@ -23,17 +23,3 @@ void reverse(char *s)
 
 
 }
-
-
-int main(void)
-{
-    char input[10000] = "Please enter a text";
-
-    printf("Please enter the text that is to be reversed: ");
-    scanf("%[^\n]s", input);
-
-    reverse(input);
-    printf("%s", input);
-
-
-}
