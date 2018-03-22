@@ -1,3 +1,9 @@
+/***********************************
+Write the function reverse(s), which reverse the order of the character array. Use this function
+to write a program then, which reverse the input of a line from the standard input stream (console
+for example)
+ **************************************/
+
 #include <stdio.h>
 #include <string.h>
 

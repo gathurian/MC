@@ -3,6 +3,8 @@
 //
 #include <stdio.h>
 
+//Write a program which prints a 32-bit integer number in a binary notation.
+
 void DecimalToBinary(int decimal){
     int i;
     int shift;
