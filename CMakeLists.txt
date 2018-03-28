@@ -12,3 +12,6 @@ add_subdirectory(SW02)
 include_directories("${PROJECT_SOURCE_DIR}/SW03/")
 add_subdirectory(SW03)
 
+include_directories("${PROJECT_SOURCE_DIR}/SW05/")
+add_subdirectory(SW05)
+
