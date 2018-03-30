@@ -15,3 +15,4 @@ add_subdirectory(SW03)
 include_directories("${PROJECT_SOURCE_DIR}/SW05/")
 add_subdirectory(SW05)
 
+add_executable(MC test_bitshifting.c)

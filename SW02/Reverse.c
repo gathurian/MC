@@ -27,5 +27,4 @@ void reverse(char *s)
                             /*That way the array gets 'rolled in' from both ends*/
     }
 
-
 }

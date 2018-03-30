@@ -3,13 +3,18 @@
 //
 #include <stdio.h>
 #include <Reverse.c>
+#include <IntegerToString.c>
 
 void main(){
     //Reverse
-    char input[10000] = "txet a retne esaelP";
+    /*char input[10000] = "txet a retne esaelP";
     printf("Please enter the text that is to be reversed: ");
     scanf("%[^\n]s", input);
     reverse(input);
-    printf("%s", input);
+    printf("%s \n", input);
+    */
+
+    //IntToString
+    printf("%s", IntegerToString(345));
 }
 
