@@ -3,3 +3,5 @@
 .directory
 
 cmake-build-debug/
+
+*.exe
