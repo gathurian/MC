@@ -21,7 +21,39 @@ void reverse(char s[]){
 }
 
 int main(){
-    char input[100];
-    scanf("Input: %p", &input);
-    reverse(input);
+    enum SEASONS {
+        WINTER = 1,
+        SPRING,
+        SUMMER,
+        AUTUMN
+    };
+
+    struct date {
+        int year;
+        char* month;
+        int day;
+        char* weekday
+    };
+
+    union values {
+        int iValue;
+        float fValue;
+        char cValue;
+    };
+
+    struct date today = {2018,"April",15,"Sunday"};
+
+    enum SEASONS now;
+    now = SPRING - 2;
+
+     union values value;
+
+     value.iValue = 3;
+     value.cValue = (char)value.iValue;
+     value.fValue = (float)value.iValue;
+
+    printf("cValue: %c \n", value.cValue);
+    printf("iValue: %d \n", value.iValue);
+    printf("fValue: %f", value.fValue);
+
 }
