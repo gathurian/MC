@@ -18,5 +18,8 @@ add_subdirectory(SW05)
 include_directories("${PROJECT_SOURCE_DIR}/SW06/")
 add_subdirectory(SW06)
 
+include_directories("${PROJECT_SOURCE_DIR}/address_administration/")
+add_subdirectory(address_administration)
+
 
 add_executable(MC test_bitshifting.c)

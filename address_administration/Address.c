@@ -1,6 +1,3 @@
-//
-// Created by Alex on 10.04.2018.
-//
 
 #include "Address.h"
 
@@ -24,25 +21,25 @@ int main(int argc, char** argv)
                 addNewAddress();
                 break;
             case 'L':
-                listAddresses();
+                printf("listAddresses()");
                 break;
             case 'R':
-                readAddressesFromFile();
+                printf("readAddressesFromFile())";
                 break;
             case 'S':
-                saveAddressesToFile();
+                printf("saveAddressesToFile()");
                 break;
             case '1':
-                sortListName();
+                printf("sortListName()");
                 break;
             case '2':
-                sortListStreet();
+                printf("sortListStreet()");
                 break;
             case '3':
-                sortListCity();
+                printf("sortListCity()");
                 break;
         }
 
     } while (c != 'Q');
-    return (EXIT_SUCCESS);
+    return (0);
 }

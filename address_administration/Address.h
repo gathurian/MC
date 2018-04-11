@@ -7,9 +7,12 @@
 
 #endif //MC_EXERCISES_ADDRESS_H
 
+#include <ctype.h>
+#include <stdio.h>
 #include "Address.c"
-#include "AdressFileIO.c"
+#include "AddressFileIO.c"
 #include "AddressSort.c"
+#include "manipulateAddress.c"
 
 struct address{
     char* firstName;
