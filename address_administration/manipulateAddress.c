@@ -18,6 +18,6 @@ void addNewAddress(){
     scanf("City: %s\n", &city);
     scanf("ZIP: %d \n", &zip);
 
-    struct address newAddress = {firstName, lastName, street, streetNr, zip, city};
+    address newAddress = {firstName, lastName, street, streetNr, zip, city};
 
 }

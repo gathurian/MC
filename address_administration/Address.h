@@ -9,10 +9,12 @@
 
 #include <ctype.h>
 #include <stdio.h>
+/*
 #include "Address.c"
 #include "AddressFileIO.c"
 #include "AddressSort.c"
 #include "manipulateAddress.c"
+*/
 
 struct address{
     char* firstName;
