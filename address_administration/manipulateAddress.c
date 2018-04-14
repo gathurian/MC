@@ -42,7 +42,7 @@ void addNewAddress() {
 
     addressList1->addr[numOfAdr] = newAddress;
 
-    addressList1->numOfAddresses = addressList1->numOfAddresses+1;
+    addressList1->numOfAddresses = ++numOfAdr;
 }
 
 void listAddresses(){
@@ -52,8 +52,8 @@ void listAddresses(){
         address tempAddr = addressList1->addr[i];
         printf("%d %s %s %s %s %s \n",
                i+1,
-               tempAddr.firstName,
                tempAddr.lastName,
+               tempAddr.firstName,
                tempAddr.street,
                tempAddr.streetNr,
                tempAddr.zip,

@@ -1,16 +1,16 @@
 
 #include "Address.h"
 #include "manipulateAddress.c"
+#include "AddressSort.c"
 
 int main(int argc, char** argv)
 {
     addressList1 = (addressList*) malloc(sizeof(addressList));
 
-    if(addressList1){
+    /*if(addressList1){
         addressList1 ->addr = NULL;
         addressList1 ->numOfAddresses = 0;
-        addressList1 ->nextAddr = NULL;
-    }
+    }*/
 
     char c;
     do {
@@ -39,13 +39,13 @@ int main(int argc, char** argv)
                 printf("saveAddressesToFile()");
                 break;
             case '1':
-                printf("sortListName()");
+                sortListName();
                 break;
             case '2':
-                printf("sortListStreet()");
+                sortListStreet();
                 break;
             case '3':
-                printf("sortListCity()");
+                sortListCity();
                 break;
         }
 

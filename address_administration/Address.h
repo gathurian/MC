@@ -24,7 +24,6 @@ address newAddress;
 
 typedef struct addressList_t {
     address *addr;
-    address *nextAddr;
     int numOfAddresses;
 } addressList;
 
@@ -44,5 +43,12 @@ void sortListName();
 void sortListStreet();
 
 void sortListCity();
+
+int compareNames(const void* a, const void* b);
+
+int compareStreets(const void* a, const void* b);
+
+int compareCities(const void* a, const void* b);
+
 
 #endif //MC_EXERCISES_ADDRESS_H
