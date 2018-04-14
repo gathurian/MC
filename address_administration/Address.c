@@ -1,8 +1,17 @@
 
 #include "Address.h"
+#include "manipulateAddress.c"
 
 int main(int argc, char** argv)
 {
+    addressList1 = (addressList*) malloc(sizeof(addressList));
+
+    if(addressList1){
+        addressList1 ->addr = NULL;
+        addressList1 ->numOfAddresses = 0;
+        addressList1 ->nextAddr = NULL;
+    }
+
     char c;
     do {
         printf("\n");
@@ -21,10 +30,10 @@ int main(int argc, char** argv)
                 addNewAddress();
                 break;
             case 'L':
-                printf("listAddresses()");
+                listAddresses();
                 break;
             case 'R':
-                printf("readAddressesFromFile())";
+                printf("readAddressesFromFile()");
                 break;
             case 'S':
                 printf("saveAddressesToFile()");

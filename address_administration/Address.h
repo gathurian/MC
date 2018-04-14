@@ -5,33 +5,44 @@
 #ifndef MC_EXERCISES_ADDRESS_H
 #define MC_EXERCISES_ADDRESS_H
 
-#endif //MC_EXERCISES_ADDRESS_H
-
 #include <ctype.h>
 #include <stdio.h>
-/*
-#include "Address.c"
-#include "AddressFileIO.c"
-#include "AddressSort.c"
-#include "manipulateAddress.c"
-*/
+#include <stdbool.h>
+#include <stdlib.h>
+#include <string.h>
 
-struct address{
-    char* firstName;
-    char* lastName;
-    char* street;
-    int streetNr;
-    int zip;
-    char* city;
+typedef struct address_t {
+    char firstName[50];
+    char lastName[50];
+    char street[50];
+    char streetNr[50];
+    char zip[4];
+    char city[50];
+} address;
 
-    struct address* next;
-    struct address* prev;
-};
+address newAddress;
+
+typedef struct addressList_t {
+    address *addr;
+    address *nextAddr;
+    int numOfAddresses;
+} addressList;
+
+addressList *addressList1;
+
 
 void addNewAddress();
+
 void listAddresses();
+
 bool readAddressesFromFile();
+
 bool saveAddressToFile();
+
 void sortListName();
+
 void sortListStreet();
+
 void sortListCity();
+
+#endif //MC_EXERCISES_ADDRESS_H

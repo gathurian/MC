@@ -1,4 +1,4 @@
-Address:	Address.o AddressFileIO.o AddressSort.o manipulateAddress.c
+Address:	Address.o AddressFileIO.o AddressSort.o manipulateAddress.o
 	gcc -o Address Address.o AddressFileIO.o AddressSort.o manipulateAddress.o
 
 Address.o:	Address.c
