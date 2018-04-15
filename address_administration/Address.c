@@ -5,10 +5,14 @@
 
 int main(int argc, char** argv)
 {
+    printf("---------------------------------------\n");
+    printf("|     Address Management System       |\n");
+    printf("---------------------------------------\n");
+
     addressList1 = (addressList*) malloc(sizeof(addressList));
 
-    /*if(addressList1){
-        addressList1 ->addr = NULL;
+/*    if(addressList1){
+        //addressList1 ->addr = NULL;
         addressList1 ->numOfAddresses = 0;
     }*/
 

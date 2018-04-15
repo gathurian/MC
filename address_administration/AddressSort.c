@@ -23,19 +23,39 @@ int compareNames(const void* a, const void* b){
     address* address1 = (address*) a;
     address* address2 = (address*) b;
 
-    return strcmp(address1->lastName, address2->lastName);
+    if(address1->lastName > address2->lastName){
+        return 1;
+    }
+    else if(address1->lastName < address2->lastName){
+        return -1;
+    } else{
+        return 0;
+    }
 }
 
 int compareCities(const void* a, const void* b){
     address* address1 = (address*) a;
     address* address2 = (address*) b;
 
-    return strcmp(address1->city, address2->city);
-}
+    if(address1->city > address2->city){
+        return 1;
+    }
+    else if(address1->city < address2->city){
+        return -1;
+    } else{
+        return 0;
+    }}
 
 int compareStreets(const void* a, const void* b){
     address* address1 = (address*) a;
     address* address2 = (address*) b;
 
-    return strcmp(address1->street, address2->street);
+    if(address1->lastName > address2->lastName){
+        return 1;
+    }
+    else if(address1->street < address2->streetNr){
+        return -1;
+    } else{
+        return 0;
+    }
 }
