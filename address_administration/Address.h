@@ -16,7 +16,7 @@ typedef struct address_t {
     char lastName[50];
     char street[50];
     char streetNr[50];
-    char zip[4];
+    char zip[5];
     char city[50];
 } address;
 
@@ -36,7 +36,7 @@ void listAddresses();
 
 bool readAddressesFromFile();
 
-bool saveAddressToFile();
+bool saveAddressesToFile();
 
 void sortListName();
 

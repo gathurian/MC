@@ -2,6 +2,7 @@
 #include "Address.h"
 #include "manipulateAddress.c"
 #include "AddressSort.c"
+#include "AddressFileIO.c"
 
 int main(int argc, char** argv)
 {
@@ -40,7 +41,7 @@ int main(int argc, char** argv)
                 printf("readAddressesFromFile()");
                 break;
             case 'S':
-                printf("saveAddressesToFile()");
+                saveAddressesToFile();
                 break;
             case '1':
                 sortListName();
