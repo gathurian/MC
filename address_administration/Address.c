@@ -29,7 +29,7 @@ void addNewAddress() {
 
     strcpy(newAddress.firstName, firstName);
     strcpy(newAddress.lastName, lastName);
-    strcpy(newAddress.street, street);
+    strcpy(newAddress.street, street);          //assign given userdata to the temp address
     strcpy(newAddress.streetNr, streetNr);
     strcpy(newAddress.zip, zip);
     strcpy(newAddress.city, city);
@@ -37,10 +37,13 @@ void addNewAddress() {
 
     int numOfAdr = addressList1->numOfAddresses;
 
+    //reallocate memory to the addresslist to accomodate the new address
     addressList1->addr = realloc(addressList1->addr, sizeof(address) * (numOfAdr + 1));
 
+    //add the new address to the addresslist
     addressList1->addr[numOfAdr] = newAddress;
 
+    //increase the addresscounter
     addressList1->numOfAddresses = ++numOfAdr;
 }
 
