@@ -16,7 +16,7 @@ typedef struct address_t {
     char lastName[50];
     char street[50];
     char streetNr[50];
-    char zip[5];
+    char zip[50];
     char city[50];
 } address;
 
@@ -44,11 +44,11 @@ void sortListStreet();
 
 void sortListCity();
 
-int compareNames(const void* a, const void* b);
+int compareNames(const void *a, const void *b);
 
-int compareStreets(const void* a, const void* b);
+int compareStreets(const void *a, const void *b);
 
-int compareCities(const void* a, const void* b);
+int compareCities(const void *a, const void *b);
 
 
 #endif //MC_EXERCISES_ADDRESS_H

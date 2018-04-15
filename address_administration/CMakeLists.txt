@@ -3,4 +3,4 @@ project(MC_Exercises C)
 
 set(CMAKE_C_STANDARD 99)
 
-add_executable(address_administration Address.c)
+add_executable(address_administration Main.c)
