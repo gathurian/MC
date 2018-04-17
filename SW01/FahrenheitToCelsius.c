@@ -24,6 +24,7 @@ Use in the main() function a loop which calls the converting function and does t
 
 *******************************************************************************/
 #include <stdio.h>
+#include "SW01.h"
 
 float FahrenheitToCelsius ()
 {

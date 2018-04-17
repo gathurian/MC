@@ -2,6 +2,7 @@
 // Created by Alex on 01.03.2018.
 //
 #include <stdio.h>
+#include "SW01.h"
 
 //Write a program which prints a 32-bit integer number in a binary notation.
 

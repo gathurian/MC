@@ -9,6 +9,7 @@ Implement this algorithm with the aid of a while() loop.
  */
 
 #include <stdio.h>
+#include "SW01.h"
 
 int ggT(int a, int b){
     while (a != b) {

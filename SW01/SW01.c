@@ -1,19 +1,21 @@
 #include <stdio.h>
-#include <DecimalToBinary.c>
-#include <FahrenheitToCelsius.c>
-#include <ggT.c>
-#include <MenuChooser.c>
+#include "SW01.h"
+#include "FahrenheitToCelsius.c"
+#include "ggT.c"
+#include "MenuChooser.c"
+#include "DecimalToBinary.c"
 
 void main() {
     char ok;
 
-    //DecimalToBinary
+   
+	 //DecimalToBinary
     int wert;
     printf("Wert als Integer (auch negativ): ");
     scanf("%d", &wert);
     DecimalToBinary(wert);
     printf("\n");
-
+	
     //FahrenheitToCelsius
     FahrenheitToCelsius();
     ggT(4,6);
@@ -53,6 +55,7 @@ void main() {
                 quit();
                 break;
         }
+        getchar();
     }
 
 }
